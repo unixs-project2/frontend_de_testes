@@ -1,0 +1,34 @@
+ /*Vai receber exatamente isto:
+	        * consumo¬0,059701492537313
+						custo_total¬4,2292537313433
+	        * 
+	      	*/
+					/*console.log ("data.charCodeAt("+(data.length)+") ="+data.charCodeAt(data.length)); // Debug // =NaN
+					console.log ("data.charCodeAt("+(data.length -1)+") ="+data.charCodeAt(data.length -1)); // Debug // =10 // Parece que só tem 1 "\n"
+					console.log ("data.charCodeAt("+(data.length -2)+") ="+data.charCodeAt(data.length -2)); // Debug // =95 
+					console.log ("data.charCodeAt("+(data.length -3)+") ="+data.charCodeAt(data.length -3)+" - "+data.charAt (data.length -3)); // Debug
+					console.log ("data.charCodeAt("+(data.length -4)+") ="+data.charCodeAt(data.length -4)+" - "+data.charAt (data.length -4)); // Debug*/
+					
+					// Parece que tem um "\n" a mais que está gerando uma linha extra: // Não tem não -- o erro é em outro lugar
+					/*if ((data.charAt (length -1) == "\n") && (data.charAt (length -2) == "\n")) 
+						{
+						console.log ("Tinha um \\n a mais");
+						data1 = data.substring(str.length -1, str.length);
+						}
+					else data1 = data;*/
+					// Avalia se é uma mensagem de erro: (possui a string "###Erro:")
+					/*if (data.search ("###Erro:") != -1) throw ''; // Recebeu na verdade uma mensagem de erro do respondedor - Pára a execução						
+					
+					var arr_linhas = data.split ("\n"); // Quando faz o split, considera que tem dados após o último "\n" e cria um array a mais para este dado fantasma...
+					// Correção no respondedor - pedir para que ele ignore o último "\n" ao mandar os dados
+					/*console.log ("arr_linhas[0] ="+arr_linhas[0]); // Debug
+	        console.log ("arr_linhas[1] ="+arr_linhas[1]); // Debug
+	        console.log ("arr_linhas.length ="+arr_linhas.length); // Debug*/
+	        
+	        /*var arr_data = []; 
+	        for (c1 = 0; c1 != arr_linhas.length; c1++)	{
+						console.log ("arr_linhas["+c1+"] ="+arr_linhas[c1]); // Debug
+						if (arr_linhas[c1] === '') continue;
+						arr_colunas = arr_linhas[c1].split ("¬");
+						arr_data.push (arr_colunas);
+					}*/

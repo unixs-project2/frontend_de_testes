@@ -1,0 +1,26 @@
+// Projeto: UniXs - Gestão do Conhecimento
+// Programador: Paulo Griebler Júnior
+// Data de início: 24/10/2023
+// Objetivo: 
+
+24/10/2023:
+	Erros obtidos:
+	 - Ao carregar a página inicial: http://168.0.126.147:65000
+			###Erro: 	-> Refused to apply style from 'http://168.0.126.147:65000/front_teste.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+			Solução: 	-> https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type
+								-> The issue, I think, was with a CSS library starting with comments.
+								-> Retirei os comentários do arquivo CSS
+								
+								Estes --> /*// Projeto: UniXs - Gestão do Conhecimento
+// Programador: Paulo Griebler Júnior
+// Data de início: 20/10/2023
+// Objetivo:
+* 
+*/
+			Solução2: -> //app.use(express.static('/')); // Não funcionou usando o diretório raiz -- tive que mover os arquivos CSS, imagens e JS para '/public' conforme descrito abaixo
+			Solução real: -> app.use(express.static('public')); // Usado para entregar arquivos 'estáticos' localizados no diretório "/" -- arquivos CSS, imagens e JS
+			
+		- Ao testar a rota: http://168.0.126.147:65000/signup com um usuário já cadastrado na DB
+		O codigo de resposta HTTP 422 Unprocessable Entity indica que o servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.
+			Solução: -> antes de testar esta rota deve resetar a DB no servidor --> criar uma rota para isso !
+

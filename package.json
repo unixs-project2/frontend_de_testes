@@ -1,0 +1,15 @@
+{
+  "name": "frontend_de_testes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "front_teste_servidor_com_express.js",
+  "scripts": {
+		"dev": "node front_teste_servidor_com_express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paulo Griebler Júnior",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
